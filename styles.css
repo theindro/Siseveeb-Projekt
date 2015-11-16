@@ -1,0 +1,26 @@
+#Login {
+
+    display: inline-block;
+    float:right;
+    margin-top: 15px;
+    margin-right: 25px;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+#main-bar {
+    background: linear-gradient(#f2f2f2, #dedede);
+    display:inline-block;
+    float:left;
+    width:100%;
+    height: 50px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+
+}
