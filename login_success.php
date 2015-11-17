@@ -1,17 +1,13 @@
 <?php
-if(!isset($_SESSION['myusername'])){
-    // go to login page code here.
-    // in login page, store data into session, use following:
-    $_SESSION['myusername']="myusername";
+session_start();
+if (!isset($_SESSION['myusername'])) {
 }
-else{
-    $username=$_SESSION['myusername'];// get previous session and go your project page
-}
-header('Location: members.php');
+header('location: members.php')
 ?>
 
 <html>
 <body>
-Login Successful!
+Login successful.
+
 </body>
 </html>
