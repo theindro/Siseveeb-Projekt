@@ -1,7 +1,17 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Indro
- * Date: 17.11.2015
- * Time: 9:18
- */
+
+<html>
+<head><title>Sign-In</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="body">
+
+<div id="main-bar">
+    <img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo">
+    <div id="loggedin">
+        <?php echo "olete sisse loginud kasutajaga:" .$_SESSION['username'];
+        ?>
+    </div>
+</div>
+</div>
+</body>
+</html>
