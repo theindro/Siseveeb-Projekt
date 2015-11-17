@@ -34,9 +34,35 @@
 }
 
 #tabel {
-    margin-top: 100px;
+    text-align: center;
+    margin-top: -100px;
     border: solid 1px;
     background-color: rgba(238, 238, 238, 0.10);
     margin-left: 500px;
 }
+.menuu {
 
+}
+.meny {
+    display: block;
+    color: #36caff;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 0;
+}
+
+h1 {
+
+    color: red;
+    font-family: sans-serif;
+}

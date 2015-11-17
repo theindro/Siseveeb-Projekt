@@ -16,6 +16,15 @@
 
         <a href="logout.php"><input type="button" value="Log out"></a>
     </div>
+    <h1 style="text-align:center;">Tunniplaan</h1>
+    <div class="menuu";>
+        <ul>
+        <li><a class="meny" href="#">menuu</a></li>
+        <li><a class="meny" href="#">menuu</a></li>
+        <li><a class="meny" href="#">menuu</a></li>
+        </ul>
+    </div>
+
     <table id="tabel";>
         <tr>
             <th>Kellaaeg</th>
