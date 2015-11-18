@@ -11,17 +11,17 @@
     <img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo">
     <div id="loggedin">
         <?php
-        echo "Tere tulemuast (kasutajanimi)";
+        echo "Tere tulemuast <strong>". $_SESSION['myusername']."</strong>";
         ?>
 
-        <a href="logout.php"><input type="button" value="Log out"></a>
+        <a href="logout.php"><input type="button" value="Välju"></a>
     </div>
     <h1 style="text-align:center;">Tunniplaan</h1>
     <div class="menuu";>
         <ul>
-        <li><a class="meny" href="#">menuu</a></li>
-        <li><a class="meny" href="#">menuu</a></li>
-        <li><a class="meny" href="#">menuu</a></li>
+        <li><a class="meny" href="#">Pealeht</a></li>
+        <li><a class="meny" href="#">Tunniplaan</a></li>
+        <li><a class="meny" href="#">Info</a></li>
         </ul>
     </div>
 
