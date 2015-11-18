@@ -1,5 +1,8 @@
-<?php session_start();?>
-
+<?php session_start();
+if(!isset($_SESSION['myusername'])){
+header("Location:index.php");
+}
+?>
 <html>
 <head>
     <title>KHK Siseveeb</title>
@@ -10,11 +13,12 @@
 <div id="main-bar">
     <img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo">
     <div id="loggedin">
+
         <?php
         echo "Tere tulemuast <strong>". $_SESSION['myusername']."</strong>";
         ?>
 
-        <a href="logout.php"><input type="button" value="Välju"></a>
+        <a href="logout.php"><input id="button" type="button" value="Välju"></a>
     </div>
     <h1 style="text-align:center;">Tunniplaan</h1>
     <div class="menuu";>
