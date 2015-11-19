@@ -35,6 +35,5 @@ if($count==1){
     header("location:login_success.php");
 }
 else {
-    echo "Wrong Username or Password";
+    echo "Vale kasutajatunnus või parool!";
 }
-?>

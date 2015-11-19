@@ -2,7 +2,7 @@
 session_start();
 if (!isset($_SESSION['myusername'])) {
 }
-header('location: members.php')
+header('location: ../index.php')
 ?>
 
 <html>

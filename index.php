@@ -1,22 +1,51 @@
-<!DOCTYPE HTML>
+<?php session_start();
+if(!isset($_SESSION['myusername'])){
+header("Location:login/loggisisse.php");
+}
+?>
 <html>
-<head><title>Sign-In</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<head>
+    <title>KHK Siseveeb</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body class="body">
 
 <div id="main-bar">
-    <img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo">
-    <div id="Login">
-        <form method="POST" action="checklogin.php">
-        <label>Login:</label>
-            <input placeholder="kasutajanimi" id="myusername" type="text" name="myusername" size="20">
-        <label></label>
-            <input placeholder="parool" id="mypassword" type="password" name="mypassword" size="20">
-            <!-- login nupp !-->
-        <input id="button" type="submit" name="submit" value="Loggi sisse">
-        </form>
+    <a href="#"><img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo"></a>
+    <div id="loggedin">
+
+        <?php
+        echo "Tere tulemuast <strong>". $_SESSION['myusername']."</strong>";
+        ?>
+
+        <a href="login/logout.php"><input id="button" type="button" value="Välju"></a>
     </div>
+    <h1 style="text-align:center;">Tunniplaan</h1>
+    <div class="menuu";>
+        <ul>
+        <li><a class="meny" href="#">Pealeht</a></li>
+        <li><a class="meny" href="#">Tunniplaan</a></li>
+        <li><a class="meny" href="#">Info</a></li>
+        </ul>
+    </div>
+
+    <table id="tabel";>
+        <tr>
+            <th>Kellaaeg</th>
+            <th>Õppeaine nimi</th>
+            <th>Õpetaja</th>
+            <th>Tunnimaterjal</th>
+            <th>Tunni moodle link</th>
+        </tr>
+        <tr>
+            <td>andmed siia andmebaasist</td>
+            <td>andmed siia andmebaasist</td>
+            <td>andmed siia andmebaasist</td>
+            <td>andmed siia andmebaasist</td>
+            <td>andmed siia andmebaasist</td>
+
+        </tr>
+    </table>
 </div>
 </div>
 </body>

@@ -1,0 +1,241 @@
+#Login {
+    display: inline-block;
+    float:right;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+/*loggi sisse ja välja nupp*/
+#button {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    float:right;
+    margin-top: -1px;
+    margin-right: 15px;
+    border: 0;
+
+}
+
+#button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+label {
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 14px;
+}
+input {
+    margin-right: 20px;
+}
+
+
+/*kuvab tere tulemast css*/
+#loggedin {
+    display: inline-block;
+    float:right;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: #6e7988;
+}
+
+#main-bar {
+    background-color: #eee;
+    display:inline-block;
+    float:left;
+    width:100%;
+    height: 50px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+
+}
+
+#tabel {
+    text-align: center;
+    margin-top: -100px;
+    border: solid 1px;
+    background-color: rgba(238, 238, 238, 0.10);
+    margin-left: 500px;
+}
+.menuu {
+
+}
+.meny {
+    display: block;
+    color: #36caff;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 50px;
+    padding: 0;
+}
+
+h1 {
+
+    color: red;
+    font-family: sans-serif;
+}
+
+td {
+    padding: 30px 10px 30px 20px;
+    border-top: solid 1px;
+}
+
+/*NAVIGATION BAAR*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#cssmenu {
+    position: absolute;
+    margin-top: 80px;
+    width: 220px;
+    font-family: Raleway, sans-serif;
+    color: #ffffff;
+}
+#cssmenu ul ul {
+    display: none;
+}
+#cssmenu > ul > li.active > ul {
+    display: block;
+}
+.align-right {
+    float: right;
+}
+#cssmenu > ul > li > a {
+    padding: 16px 22px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    background: #3498db;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+#cssmenu > ul > li > a:hover {
+    color: #d8f3f0;
+}
+#cssmenu ul > li.has-sub > a:after {
+    position: absolute;
+    right: 26px;
+    top: 19px;
+    z-index: 5;
+    display: block;
+    height: 10px;
+    width: 2px;
+    background: #ffffff;
+    content: "";
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub > a:before {
+    position: absolute;
+    right: 22px;
+    top: 23px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    background: #ffffff;
+    content: "";
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub.open > a:after,
+#cssmenu ul > li.has-sub.open > a:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#cssmenu ul ul li a {
+    padding: 14px 22px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 14px;
+    text-decoration: none;
+    color: #dddddd;
+    background: #49505a;
+    -webkit-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+#cssmenu ul ul ul li a {
+    padding-left: 32px;
+}
+#cssmenu ul ul li a:hover {
+    color: #ffffff;
+}
+#cssmenu ul ul > li.has-sub > a:after {
+    top: 16px;
+    right: 26px;
+    background: #dddddd;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+    top: 20px;
+    background: #dddddd;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+}
