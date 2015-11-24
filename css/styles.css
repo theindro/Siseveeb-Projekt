@@ -231,6 +231,57 @@ td {
     top: 20px;
     background: #dddddd;
 }
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    height: 50px;
+}
+/*tunniplaan tabel*/
+
+table {
+    font-family: 'Arial';
+
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow:
+    0px 0px 20px rgba(0, 0, 0, 0.10),
+    0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05),
+    0px 30px 20px rgba(0, 0, 0, 0.05);
+    position:fixed;
+    top: 10%;
+    left:25%;
+    width: 50%;
+}
+tr:hover {
+    background: #f4f4f4;
+}
+td {
+    color: #555;
+}
+
+th, td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+th {
+    background: #00cccc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+table.last {
+     border-right: none;
+ }
+
+
 .suema {
     font-size: 40px;
     position: absolute;
@@ -244,15 +295,6 @@ td {
     left: 45%;
     color: #cfcfcf;
     font-size: 70px;
-
 }​
 
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #eee;
-    height: 50px;
-}
 
