@@ -61,7 +61,7 @@ input {
 .body {
     margin: 0;
     padding: 0;
-    background-color: #6e7988;
+    background-color: #fdfdfd;
 }
 
 #main-bar {
@@ -231,11 +231,28 @@ td {
     top: 20px;
     background: #dddddd;
 }
+.suema {
+    font-size: 40px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    color: #cfcfcf;
+}
+#loggienne {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    color: #cfcfcf;
+    font-size: 70px;
+
+}​
+
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: #eee;
     height: 50px;
 }
+

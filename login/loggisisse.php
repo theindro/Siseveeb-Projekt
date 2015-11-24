@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html>
 <head><title>Sign-In</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -14,10 +14,17 @@
         <label></label>
             <input placeholder="parool" id="mypassword" type="password" name="mypassword" size="20">
             <!-- login nupp !-->
-        <input id="button" type="submit" name="submit" value="Loggi sisse">
+        <input id="button" type="submit" name="submit" value="Sisene">
         </form>
     </div>
 </div>
+</div>
+<div>
+<p id="loggienne">Siseveeb</p>
+<div class="suema">Info nägemiseks loggi sisse!</div>
+</div>
+<div>
+
 </div>
 </body>
 </html>
