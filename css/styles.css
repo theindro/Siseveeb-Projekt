@@ -47,6 +47,26 @@ input {
     margin-right: 20px;
 }
 
+#tunnimaterjal {
+    position:absolute;
+    top: 10%;
+    left: 25%;
+    width:50%;
+    height:500px;
+    background-color: #f3f3f3;
+
+}
+
+h1 {
+    text-align:center;
+    color: white;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    display:block;
+    background-color: #00cccc;
+}
 
 /*kuvab tere tulemast css*/
 #loggedin {
@@ -76,6 +96,7 @@ input {
     width:100%;
     height: 50px;
     margin: auto;
+    border-bottom: solid 1px #dfdfdf;
 }
 
 .logo {
@@ -111,16 +132,11 @@ ul {
     padding: 0;
 }
 
-h1 {
-
-    color: red;
-    font-family: sans-serif;
-}
-
 td {
     padding: 30px 10px 30px 20px;
     border-top: solid 1px;
 }
+
 
 /*NAVIGATION BAAR*/
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
@@ -249,7 +265,6 @@ footer {
 
 table {
     font-family: 'Arial';
-
     border-collapse: collapse;
     border: 1px solid #eee;
     border-bottom: 2px solid #00cccc;
@@ -294,6 +309,7 @@ table.last {
     left: 40%;
     color: #cfcfcf;
 }
+
 #loggienne {
     position: absolute;
     top: 35%;
@@ -301,5 +317,4 @@ table.last {
     color: #cfcfcf;
     font-size: 70px;
 }​
-
 

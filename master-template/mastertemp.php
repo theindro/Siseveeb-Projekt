@@ -32,7 +32,7 @@ if(!isset($_SESSION['myusername'])){
 
 <div id='cssmenu'>
     <ul>
-        <li><a href='#'>Pealeht</a></li>
+        <li><a href='index.php'>Pealeht</a></li>
         <li class='active has-sub'><a href='#'>Info</a>
             <ul>
                 <li class='has-sub'><a href='#'>Product 1</a>
@@ -50,7 +50,7 @@ if(!isset($_SESSION['myusername'])){
             </ul>
         </li>
         <li><a href='?page=tunniplaan'>Tunniplaan</a></li>
-        <li><a href='#'>Kontakt</a></li>
+        <li><a href='?page=materjal'>Tunnimaterjalid</a></li>
     </ul>
 </div>
 
