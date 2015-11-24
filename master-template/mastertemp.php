@@ -21,7 +21,7 @@ if(!isset($_SESSION['myusername'])){
     <div id="loggedin">
 
         <?php
-        echo "Olete sisse loginud kasutajaga: <strong>". $_SESSION['myusername']."</strong>";
+        echo "<p class='headtext'>Olete sisse loginud kasutajaga: <strong>". $_SESSION['myusername']."</strong></p>";
         ?>
 
         <a href="login/logout.php"><input id="button" type="button" value="Välju"></a>

@@ -22,7 +22,7 @@
     padding: 5px 20px 5px 20px;
     text-decoration: none;
     float:right;
-    margin-top: -1px;
+    margin-top: -3px;
     margin-right: 15px;
     border: 0;
 
@@ -54,10 +54,15 @@ input {
     float:right;
     margin-top: 15px;
     margin-right: 25px;
-    padding-right: 25px;
 }
 
-
+.headtext
+{
+    margin-right:20px;
+    display: inline;
+    font-family: Arial;
+    font-size: 14px;
+}
 .body {
     margin: 0;
     padding: 0;
