@@ -68,7 +68,9 @@ label {
     font-family: Arial;
     font-size: 14px;
 }
-
+.upload123 {
+    width:200px;
+}
 input {
     margin-right: 20px;
 }
@@ -81,7 +83,7 @@ p {
 
 #tunnimaterjal {
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 25%;
     padding-bottom: 50px;
     width: 50%;
@@ -193,7 +195,6 @@ td {
 }
 .laeyles {
     float:right;
-    margin-top: -165px;
 }
 
 /*NAVIGATION BAAR*/
