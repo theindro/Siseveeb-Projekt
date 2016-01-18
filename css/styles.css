@@ -1,6 +1,6 @@
 #Login {
     display: inline-block;
-    float:right;
+    float: right;
     margin-top: 15px;
     margin-right: 5px;
 }
@@ -21,12 +21,36 @@
     font-size: 12px;
     padding: 5px 20px 5px 20px;
     text-decoration: none;
-    float:right;
+    float: right;
     margin-top: -3px;
     margin-right: 15px;
     border: 0;
-
 }
+
+#submit {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    border:0;
+    cursor: pointer;
+}
+
+#vali {
+    border:solid 1px #dddddd;
+}
+
+
 
 #button:hover {
     background: #3cb0fd;
@@ -36,6 +60,7 @@
     background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
+    cursor: pointer;
 }
 
 label {
@@ -43,46 +68,74 @@ label {
     font-family: Arial;
     font-size: 14px;
 }
+
 input {
     margin-right: 20px;
 }
 
+p {
+    font-family: arial;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
 #tunnimaterjal {
-    position:absolute;
+    position: absolute;
     top: 10%;
     left: 25%;
-    width:50%;
-    height:500px;
-    background-color: #f3f3f3;
+    padding-bottom: 50px;
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+    border: solid 1px #f3f3f3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+    0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05);
+}
 
+#pealeht {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 500px;
+    background-color: #f3f3f3;
+    background-color: #fff;
+    border: solid 1px #f3f3f3;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+    0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
-    text-align:center;
-    color: white;
-    font-family: Arial;
-    text-transform: uppercase;
-    font-size: 40px;
     text-align: center;
-    display:block;
+    color: white;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    display: block;
     background-color: #00cccc;
+    margin-top: -0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /*kuvab tere tulemast css*/
 #loggedin {
     display: inline-block;
-    float:right;
+    float: right;
     margin-top: 15px;
     margin-right: 25px;
 }
 
-.headtext
-{
-    margin-right:20px;
+.headtext {
+    margin-right: 20px;
     display: inline;
     font-family: Arial;
     font-size: 14px;
 }
+
 .body {
     margin: 0;
     padding: 0;
@@ -91,9 +144,9 @@ h1 {
 
 #main-bar {
     background-color: #eee;
-    display:inline-block;
-    float:left;
-    width:100%;
+    display: inline-block;
+    float: left;
+    width: 100%;
     height: 50px;
     margin: auto;
     border-bottom: solid 1px #dfdfdf;
@@ -111,9 +164,11 @@ h1 {
     background-color: rgba(238, 238, 238, 0.10);
     margin-left: 500px;
 }
+
 .menuu {
 
 }
+
 .meny {
     display: block;
     color: #36caff;
@@ -136,131 +191,54 @@ td {
     padding: 30px 10px 30px 20px;
     border-top: solid 1px;
 }
-
+.laeyles {
+    float:right;
+    margin-top: -165px;
+}
 
 /*NAVIGATION BAAR*/
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a {
+
+#cssmenu {
+    margin-top:99px;
+    position:absolute;
+}
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 0;
-    list-style: none;
-    line-height: 1;
-    display: block;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#cssmenu {
-    position: absolute;
-    margin-top: 80px;
-    width: 220px;
-    font-family: Raleway, sans-serif;
-    color: #ffffff;
-}
-#cssmenu ul ul {
-    display: none;
-}
-#cssmenu > ul > li.active > ul {
-    display: block;
-}
-.align-right {
-    float: right;
-}
-#cssmenu > ul > li > a {
-    padding: 16px 22px;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 16px;
-    text-decoration: none;
-    color: #ffffff;
-    background: #3498db;
-    -webkit-transition: color .2s ease;
-    -o-transition: color .2s ease;
-    transition: color .2s ease;
-}
-#cssmenu > ul > li > a:hover {
-    color: #d8f3f0;
-}
-#cssmenu ul > li.has-sub > a:after {
-    position: absolute;
-    right: 26px;
-    top: 19px;
-    z-index: 5;
-    display: block;
-    height: 10px;
-    width: 2px;
-    background: #ffffff;
-    content: "";
-    -webkit-transition: all 0.1s ease-out;
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-}
-#cssmenu ul > li.has-sub > a:before {
-    position: absolute;
-    right: 22px;
-    top: 23px;
-    display: block;
-    width: 10px;
-    height: 2px;
-    background: #ffffff;
-    content: "";
-    -webkit-transition: all 0.1s ease-out;
-    -moz-transition: all 0.1s ease-out;
-    -ms-transition: all 0.1s ease-out;
-    -o-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
-}
-#cssmenu ul > li.has-sub.open > a:after,
-#cssmenu ul > li.has-sub.open > a:before {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-#cssmenu ul ul li a {
-    padding: 14px 22px;
-    cursor: pointer;
-    z-index: 2;
-    font-size: 14px;
-    text-decoration: none;
-    color: #dddddd;
-    background: #49505a;
-    -webkit-transition: color .2s ease;
-    -o-transition: color .2s ease;
-    transition: color .2s ease;
-}
-#cssmenu ul ul ul li a {
-    padding-left: 32px;
-}
-#cssmenu ul ul li a:hover {
-    color: #ffffff;
-}
-#cssmenu ul ul > li.has-sub > a:after {
-    top: 16px;
-    right: 26px;
-    background: #dddddd;
-}
-#cssmenu ul ul > li.has-sub > a:before {
-    top: 20px;
-    background: #dddddd;
+    width: 250px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: auto;
+    overflow: auto;
+    font-family:arial;
 }
 
+li a {
+    display: block;
+    color: #000;
+    padding: 10px 0 10px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4b99ff;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #e3e3e3;
+}
 
 footer {
+    border-top:solid 1px #e3e3e3;
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #eee;
     height: 50px;
 }
+
 /*tunniplaan tabel*/
 
 table {
@@ -268,19 +246,20 @@ table {
     border-collapse: collapse;
     border: 1px solid #eee;
     border-bottom: 2px solid #00cccc;
-    box-shadow:
-    0px 0px 20px rgba(0, 0, 0, 0.10),
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
     0px 10px 20px rgba(0, 0, 0, 0.05),
     0px 20px 20px rgba(0, 0, 0, 0.05),
     0px 30px 20px rgba(0, 0, 0, 0.05);
-    position:fixed;
+    position: fixed;
     top: 10%;
-    left:25%;
+    left: 25%;
     width: 50%;
 }
+
 tr:hover {
     background: #f4f4f4;
 }
+
 td {
     color: #555;
 }
@@ -291,16 +270,17 @@ th, td {
     padding: 12px 35px;
     border-collapse: collapse;
 }
+
 th {
     background: #00cccc;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
 }
-table.last {
-     border-right: none;
- }
 
+table.last {
+    border-right: none;
+}
 
 .suema {
     font-size: 40px;
@@ -310,11 +290,31 @@ table.last {
     color: #cfcfcf;
 }
 
+h2 {
+    font-family: arial;
+    color: grey;
+}
+
 #loggienne {
     position: absolute;
     top: 35%;
     left: 45%;
     color: #cfcfcf;
     font-size: 70px;
-}​
+}
+
+a:visited {
+    color: blue;
+    text-decoration:none;
+}
+a{
+    text-decoration:none;
+}
+
+#materjalid {
+
+    box-shadow: none;
+}
+
+​
 

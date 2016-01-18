@@ -8,25 +8,26 @@
 </head>
 <body>
 <?php
-$target_dir = "uploads/";
+$target_dir = "";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 
 if (isset($_POST["submit"])) {
     if (file_exists($target_file)) {
-        echo "Sorry, file already exists.";
+        echo "Üleslaetud fail juba eksisteerib.";
         $uploadOk = 0;
     }
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    echo "Your file was not uploaded.";
+    echo "Faili üleslaadimine ebaõnnestus!";
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+        echo "Faili " . basename($_FILES["fileToUpload"]["name"]) . " üleslaadimine õnnestus!";
+
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        echo "Vabandame, üleslaadiisega tekkis probleeme.";
     }
 }
 

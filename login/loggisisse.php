@@ -1,4 +1,3 @@
-
 <html>
 <head><title>Sign-In</title>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -6,7 +5,7 @@
 <body class="body">
 
 <div id="main-bar">
-    <img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo">
+    <a href="../index.php"><img src="http://khk.ee/uploads/KHK_logo_png_311x71.png" class="logo"></a>
     <div id="Login">
         <form method="POST" action="checklogin.php">
         <label>Login:</label>

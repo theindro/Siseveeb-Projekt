@@ -1,9 +1,14 @@
-<?php session_start();
+<?php
+// check if logged in start session
+session_start();
 if(!isset($_SESSION['myusername'])){
     header("Location:login/loggisisse.php");
 }
 ?>
+
 <html>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +26,7 @@ if(!isset($_SESSION['myusername'])){
     <div id="loggedin">
 
         <?php
-        echo "<p class='headtext'>Olete sisse loginud kasutajaga: <strong>". $_SESSION['myusername']."</strong></p>";
+        echo "<p class='headtext'>Olete sisse loginud kasutajaga: <strong><a href='?page=seaded'>". $_SESSION['myusername']."</a></strong></p>";
         ?>
 
         <a href="login/logout.php"><input id="button" type="button" value="Välju"></a>
@@ -32,25 +37,12 @@ if(!isset($_SESSION['myusername'])){
 
 <div id='cssmenu'>
     <ul>
-        <li><a href='index.php'>Pealeht</a></li>
-        <li class='active has-sub'><a href='#'>Info</a>
-            <ul>
-                <li class='has-sub'><a href='#'>Product 1</a>
-                    <ul>
-                        <li><a href='#'>Sub Product</a></li>
-                        <li><a href='#'>Sub Product</a></li>
-                    </ul>
-                </li>
-                <li class='has-sub'><a href='#'>Product 2</a>
-                    <ul>
-                        <li><a href='#'>Sub Product</a></li>
-                        <li><a href='#'>Sub Product</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
+        <li><a class="active" href='index.php'>Pealeht</a></li>
         <li><a href='?page=tunniplaan'>Tunniplaan</a></li>
         <li><a href='?page=materjal'>Tunnimaterjalid</a></li>
+        <li><a href='index.php'>link</a></li>
+        <li><a href='index.php'>link</a></li>
+        <li><a href='index.php'>link</a></li>
     </ul>
 </div>
 
@@ -58,10 +50,16 @@ if(!isset($_SESSION['myusername'])){
 
 <footer>
     <div class="footer">
-        <p style="font-family:Arial; font-size: 12px; text-align:center; padding-top: 8px;">copyright: indro only doin work</p>
+        <p style="color: grey;
+        font-family:Arial;
+        font-size: 12px;
+        text-align:center;">
+            © 2015 VS15. All rights reserved.</p>
     </div>
 </footer>
 
 </div>
 </body>
 </html>
+
+
