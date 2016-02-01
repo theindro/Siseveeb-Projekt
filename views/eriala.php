@@ -108,8 +108,12 @@ function upload()
                   <p class='upload123'>
                     <strong>{$row['name']}</strong>
                     {$row['created']}
-                    <a href='index.php?page=get_file?id={$row['id']}'>Download</a>
-                  </p>";
+                    <a href='get_file.php?id={$row['id']}'>Lae alla</a>
+                    <a href='delete_file.php?id={$row['id']}'>Kustuta</a>
+                  </p>
+
+
+                  ";
             }
 
 

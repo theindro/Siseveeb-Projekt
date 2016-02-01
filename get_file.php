@@ -17,9 +17,9 @@ if(isset($_GET['id'])) {
 
         // Fetch the file information
         $query = "
-            SELECT `mime`, `name`, `size`, `data`
-            FROM `file`
-            WHERE `id` = {$id}";
+            SELECT mime, name, size, data
+            FROM file
+            WHERE id = {$id}";
         $result = $dbLink->query($query);
 
         if($result) {
