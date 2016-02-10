@@ -40,7 +40,7 @@ if(!isset($_SESSION['myusername'])){
         <li><a class="active" href='index.php'>Pealeht</a></li>
         <li><a href='?page=tunniplaan'>Tunniplaan</a></li>
         <li><a href='?page=materjal'>Tunnimaterjalid</a></li>
-        <li><a href='index.php'>link</a></li>
+        <li><a href='?page=lisa'>Lisa</a></li>
         <li><a href='index.php'>link</a></li>
         <li><a href='index.php'>link</a></li>
     </ul>

@@ -100,7 +100,7 @@ p {
     top: 10%;
     left: 25%;
     width: 50%;
-    height: 500px;
+    height: auto;
     background-color: #f3f3f3;
     background-color: #fff;
     border: solid 1px #f3f3f3;
@@ -231,6 +231,10 @@ li a:hover:not(.active) {
     background-color: #e3e3e3;
 }
 
+.lisama {
+    margin-left: 25px;
+}
+
 footer {
     border-top:solid 1px #e3e3e3;
     position: fixed;
@@ -261,7 +265,7 @@ tr:hover {
     background: #f4f4f4;
 }
 
-td {
+.td {
     color: #555;
 }
 
@@ -316,6 +320,15 @@ a{
 
     box-shadow: none;
 }
+
+/* lisa tabel */
+
+.tabl {
+margin-top:500px;
+}
+
+
+
 
 ​
 

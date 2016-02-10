@@ -3,11 +3,3 @@
 
     <p>
         Kasutajanimi: <?php echo $_SESSION['myusername'] ?>
-        <br><br>
-        E-mail:
-        <br><br>
-        Isikukood:
-        <br><br>
-        Eriala:
-    </p>
-</div>
